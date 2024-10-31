@@ -1,0 +1,385 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../img/FondoMain.png");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(100px);
+}
+    
+header nav{
+    background: #000000c0;
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul a{
+    color: #fff  ;
+    margin:0 12px;
+    font-size: 20px;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+header ul a:hover{
+        background-color: #fff;
+        color: #535C91;
+    
+}
+
+nav .logo{
+    width: 170px;
+}
+
+nav .botonInicioSesion{
+    background-color: #535C91;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+#hero .logohero{
+    width: 250px;
+}
+
+#hero{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 12%;
+}
+
+
+#hero h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#hero h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+
+#hero h3{
+    font-size: 20px;
+    font-weight: lighter;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+#hero button{
+    background-color: #535C91;
+    margin-top: 40px;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 21px;
+    border-radius: 8px;
+}
+
+#hero button:hover{
+    background-color: #fff;
+    color: #535C91;
+}
+
+#hero input{
+    background-color: #00000088;
+    color: #fff;
+    width: 400px;
+    height: 40px;
+}
+
+
+    /* MAIN */
+
+main {
+    background-color: #070F2B;
+}
+
+
+
+#tendencias{
+    width: 100%;
+    position: relative;
+    padding: 120px 0px;
+    text-align: center;
+    background-color: #02050f;
+}
+
+#tendencias h2{
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #535C91;
+}
+
+
+#tendencias p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+#tendencias .fila{
+    display: flex;
+    justify-content: center;
+}
+ hr{
+    border: 4px solid #535C91;
+ }
+#tendencias article{
+    margin: 20px 50px;
+    position: relative;
+
+}
+
+#tendencias article h3{
+    position: absolute;
+    font-size: 50px;
+    top:620px;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+#tendencias img{
+    border-radius: 10%;
+    width: 450px;
+    transition: .5s;
+}
+
+#tendencias img:hover{
+    transform: scale(.8);
+    filter: grayscale(1);
+}
+/* Variables CSS */
+:root {
+    --accent-color: #070F2B; /* Color para acentos y títulos */
+    --contrast-color: #ffffff; /* Color de contraste para texto */
+    --surface-color: #070F2B; /* Color de fondo para los icon-box */
+    --background-color: #00000088; /* Color de fondo de la sección */
+    --text-color: #ffffff; /* Color para el texto */
+}
+
+/* Estilos generales para la sección About */
+.about {
+    padding: 60px 0;
+    background: var(--background-color);
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.about .content {
+    margin-bottom: 40px;
+}
+
+.about .content h3 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 10px 500px 10px 400px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-bottom: 70px;
+}
+
+.about .content h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 70px 0;
+    line-height: 19px;
+    padding: 10px 300px 10px;
+    border-radius: 7px;
+    color:#535C91;
+}
+
+.about .content p {
+    margin-bottom: 20px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.about .content .read-more {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+
+.about .icon-box:hover i {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+.about .content .read-more:hover {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    padding-right: 19px;
+}
+
+.about .content .read-more:hover i {
+    margin-left: 10px;
+}
+
+/* Estilos para las icon boxes */
+.about .icon-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about .icon-box {
+    background-color: var(--surface-color);
+    padding: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    flex: 1 1 calc(50% - 10px); /* Ajusta el tamaño de las cajas en 2 columnas */
+}
+
+.about .icon-box i {
+    width: 60px;
+    height: 60px;
+    border-radius: 70%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 0;
+    transition: all 0.4s ease-out;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+    color: var(--contrast-color);
+}
+
+.about .icon-box h3 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--contrast-color);
+}
+
+.about .icon-box p {
+    margin-bottom: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.about .icon-box:hover i {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .about .icon-box {
+        flex: 1 1 100%; /* Ajusta el tamaño de las cajas en una columna */
+    }
+
+    .about .icon-boxes {
+        gap: 10px;
+    }
+}
+
+
+
+
+
+#contacto{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 80px 0;
+    background-color: #00000088;
+}
+
+#contacto h2{
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #535C91;
+}
+
+#contacto p{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#contacto form{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contacto form input{
+    width: 38%;
+    padding: 12px 20px;
+    font-size: 20px;
+    margin: 20px ;
+}
+
+#contacto form select{
+    width: 43%;
+    padding: 12px 20px;
+    font-size: 20px;
+    margin: 20px ;
+}
+
+#contacto button{
+    background-color:#535C91;
+    color: #fff;
+    font-size: 22px;
+    padding: 12px 50px;
+    border-radius: 6px;
+}
+
+/* Fotter */
+footer{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 80px 0;
+}
+
+footer p{
+    color: #fff;
+}
